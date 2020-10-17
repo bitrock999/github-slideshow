@@ -1,0 +1,851 @@
+package kbpakar;
+import java.util.*;
+
+public class KBPakar {
+    public static void main(String[]ags){
+         Scanner in = new Scanner(System.in);
+
+        int f1=50, f2=20, f3=10, f4=30, f5=30, f6=30, f7=30, f8=30, f9=30, f10=30,
+            f11=30, f12=10, f13=10, f14=10, f15=10, f16=10, f17=10, f18=10, f19=30, f20=10,
+            f21=10, f22=10, f23=10, f24=10, f25=10, f26=10, f27=10, f28=10, f29=10, f30=10,
+            f31=10, f32=10, f33=10, f34=10, f35=10, f36=40, f37=40, f38=40, f39=40, f40=40, f41=40;
+        int bobot =0;
+
+        LinkedList Indikator = new LinkedList<>();
+        String Indikator1[] = new String[]{"f1","f2","f3","f4","f5","f6","f7","f8","f9","f10",
+                                           "f11","f12","f13","f14","f15","f16","f17","f18","f19","f20",
+                                            "f21","f22","f23","f24","f25","f26","f27","f28","f29","f30",
+                                             "f31","f32","f33","f34","f35","f36","f37","f38","f39","f40","41"};
+        String Rules[] = new String[]{"r1","r2","r3","r4","r5","r6","r7","r8","r9","r10",
+                                     "r11","r12","r13","r14","r15","r16","r17","r18","r19"};
+        
+        int l = 0;
+        String yn;
+        System.out.println("Isi kuisoner ini untuk mengecek transaksi mencurigakan dengan menjawab ya atau tidak(y/n)\n");
+        //quis 1
+        System.out.println("1. Apakah transaksi melebihi 10 kali penghasilan?");
+        yn = in.next();
+        if (yn.equalsIgnoreCase("stop")) {
+                
+            }
+            else if (yn.equalsIgnoreCase("y") || yn.equalsIgnoreCase("n")) {
+                if (yn.equalsIgnoreCase("y")) {
+                    Indikator.add(Indikator1[l]);
+                    l++;
+                }
+                else l++;
+            }
+            else System.out.println("Input invalid");
+        
+        //quis 2
+        System.out.println("2.	Apakah usia nasabah dibawah 40 tahun?");
+        yn = in.next();
+        if (yn.equalsIgnoreCase("stop")) {
+                
+            }
+            else if (yn.equalsIgnoreCase("y") || yn.equalsIgnoreCase("n")) {
+                if (yn.equalsIgnoreCase("y")) {
+                    Indikator.add(Indikator1[l]);
+                    l++;
+                }
+                else l++;
+            }
+            else System.out.println("Input invalid");
+        
+        //quis 3
+        System.out.println("3.	Apakah Warga Negara Indonesia ?");
+        yn = in.next();
+        if (yn.equalsIgnoreCase("stop")) {
+                
+            }
+            else if (yn.equalsIgnoreCase("y") || yn.equalsIgnoreCase("n")) {
+                if (yn.equalsIgnoreCase("y")) {
+                    Indikator.add(Indikator1[l]);
+                    l++;
+                }
+                else l++;
+            }
+            else System.out.println("Input invalid");
+         
+        //quis 4
+        System.out.println("4.	Apakah merupakan Pejabat Negara?");
+        yn = in.next();
+        if (yn.equalsIgnoreCase("stop")) {
+                
+            }
+            else if (yn.equalsIgnoreCase("y") || yn.equalsIgnoreCase("n")) {
+                if (yn.equalsIgnoreCase("y")) {
+                    Indikator.add(Indikator1[l]);
+                    l++;
+                }
+                else l++;
+            }
+            else System.out.println("Input invalid");
+         
+        //quis 5
+        System.out.println("5.	Apakah merupakan anggota Partai Politik?");
+        yn = in.next();
+        if (yn.equalsIgnoreCase("stop")) {
+                
+            }
+            else if (yn.equalsIgnoreCase("y") || yn.equalsIgnoreCase("n")) {
+                if (yn.equalsIgnoreCase("y")) {
+                    Indikator.add(Indikator1[l]);
+                    l++;
+                }
+                else l++;
+            }
+            else System.out.println("Input invalid");
+         
+        //quis 6
+        System.out.println("6.	Apakah merupakan  ibu rumah tangga?");
+        yn = in.next();
+        if (yn.equalsIgnoreCase("stop")) {
+                
+            }
+            else if (yn.equalsIgnoreCase("y") || yn.equalsIgnoreCase("n")) {
+                if (yn.equalsIgnoreCase("y")) {
+                    Indikator.add(Indikator1[l]);
+                    l++;
+                }
+                else l++;
+            }
+            else System.out.println("Input invalid");
+         
+        //quis 7
+        System.out.println("7.	Apakah merupakan  pelajar/mahasiswa?");
+        yn = in.next();
+        if (yn.equalsIgnoreCase("stop")) {
+                
+            }
+            else if (yn.equalsIgnoreCase("y") || yn.equalsIgnoreCase("n")) {
+                if (yn.equalsIgnoreCase("y")) {
+                    Indikator.add(Indikator1[l]);
+                    l++;
+                }
+                else l++;
+            }
+            else System.out.println("Input invalid");
+         
+        //quis 8
+        System.out.println("8.	Apakah merupakan Pegawai Negeri Sipil?");
+        yn = in.next();
+        if (yn.equalsIgnoreCase("stop")) {
+                
+            }
+            else if (yn.equalsIgnoreCase("y") || yn.equalsIgnoreCase("n")) {
+                if (yn.equalsIgnoreCase("y")) {
+                    Indikator.add(Indikator1[l]);
+                    l++;
+                }
+                else l++;
+            }
+            else System.out.println("Input invalid");
+        
+        //quis 9
+        System.out.println("9.	Apakah merupakan TNI/POLRI?");
+        yn = in.next();
+        if (yn.equalsIgnoreCase("stop")) {
+                
+            }
+            else if (yn.equalsIgnoreCase("y") || yn.equalsIgnoreCase("n")) {
+                if (yn.equalsIgnoreCase("y")) {
+                    Indikator.add(Indikator1[l]);
+                    l++;
+                }
+                else l++;
+            }
+            else System.out.println("Input invalid");
+        
+        //quis 10
+        System.out.println("10.	Apakah memiliki hubungan dengan Politicaly Expose Person (PEP)?");
+        yn = in.next();
+        if (yn.equalsIgnoreCase("stop")) {
+                
+            }
+            else if (yn.equalsIgnoreCase("y") || yn.equalsIgnoreCase("n")) {
+                if (yn.equalsIgnoreCase("y")) {
+                    Indikator.add(Indikator1[l]);
+                    l++;
+                }
+                else l++;
+            }
+            else System.out.println("Input invalid");
+        
+        //quis 11
+        System.out.println("11.	Apakah bekerja pada sektor pelayanan publik?");
+        yn = in.next();
+        if (yn.equalsIgnoreCase("stop")) {
+                
+            }
+            else if (yn.equalsIgnoreCase("y") || yn.equalsIgnoreCase("n")) {
+                if (yn.equalsIgnoreCase("y")) {
+                    Indikator.add(Indikator1[l]);
+                    l++;
+                }
+                else l++;
+            }
+            else System.out.println("Input invalid");
+        
+        //quis 12
+        System.out.println("12.	Apakah merupakan pengacara?");
+        yn = in.next();
+        if (yn.equalsIgnoreCase("stop")) {
+                
+            }
+            else if (yn.equalsIgnoreCase("y") || yn.equalsIgnoreCase("n")) {
+                if (yn.equalsIgnoreCase("y")) {
+                    Indikator.add(Indikator1[l]);
+                    l++;
+                }
+                else l++;
+            }
+            else System.out.println("Input invalid");
+       
+        //quis 13
+        System.out.println("13.	Apakah merupakan kurator?");
+        yn = in.next();
+        if (yn.equalsIgnoreCase("stop")) {
+                
+            }
+            else if (yn.equalsIgnoreCase("y") || yn.equalsIgnoreCase("n")) {
+                if (yn.equalsIgnoreCase("y")) {
+                    Indikator.add(Indikator1[l]);
+                    l++;
+                }
+                else l++;
+            }
+            else System.out.println("Input invalid");
+        
+        //quis 14
+        System.out.println("14.	Apakah merupakan notaris?");
+        yn = in.next();
+        if (yn.equalsIgnoreCase("stop")) {
+                
+            }
+            else if (yn.equalsIgnoreCase("y") || yn.equalsIgnoreCase("n")) {
+                if (yn.equalsIgnoreCase("y")) {
+                    Indikator.add(Indikator1[l]);
+                    l++;
+                }
+                else l++;
+            }
+            else System.out.println("Input invalid");
+        
+        //quis 15
+        System.out.println("15.	Apakah merupakan pejabat Pembuat Akta Tanah?");
+        yn = in.next();
+        if (yn.equalsIgnoreCase("stop")) {
+                
+            }
+            else if (yn.equalsIgnoreCase("y") || yn.equalsIgnoreCase("n")) {
+                if (yn.equalsIgnoreCase("y")) {
+                    Indikator.add(Indikator1[l]);
+                    l++;
+                }
+                else l++;
+            }
+            else System.out.println("Input invalid");
+        
+        //quis 16
+        System.out.println("16.	Apakah merupakan akuntan?");
+        yn = in.next();
+        if (yn.equalsIgnoreCase("stop")) {
+                
+            }
+            else if (yn.equalsIgnoreCase("y") || yn.equalsIgnoreCase("n")) {
+                if (yn.equalsIgnoreCase("y")) {
+                    Indikator.add(Indikator1[l]);
+                    l++;
+                }
+                else l++;
+            }
+            else System.out.println("Input invalid");
+        
+        //quis 17
+        System.out.println("17.	Apakah merupakan Perencana Keuangan?");
+        yn = in.next();
+        if (yn.equalsIgnoreCase("stop")) {
+                
+            }
+            else if (yn.equalsIgnoreCase("y") || yn.equalsIgnoreCase("n")) {
+                if (yn.equalsIgnoreCase("y")) {
+                    Indikator.add(Indikator1[l]);
+                    l++;
+                }
+                else l++;
+            }
+            else System.out.println("Input invalid");
+        
+        //quis 18
+        System.out.println("18.	Apakah merupakan Konsultan Pajak?");
+        yn = in.next();
+        if (yn.equalsIgnoreCase("stop")) {
+                
+            }
+            else if (yn.equalsIgnoreCase("y") || yn.equalsIgnoreCase("n")) {
+                if (yn.equalsIgnoreCase("y")) {
+                    Indikator.add(Indikator1[l]);
+                    l++;
+                }
+                else l++;
+            }
+            else System.out.println("Input invalid");
+        
+        //quis 19
+        System.out.println("19.	Apakah Termasuk dalam daftar terorisme?");
+        yn = in.next();
+        if (yn.equalsIgnoreCase("stop")) {
+                
+            }
+            else if (yn.equalsIgnoreCase("y") || yn.equalsIgnoreCase("n")) {
+                if (yn.equalsIgnoreCase("y")) {
+                    Indikator.add(Indikator1[l]);
+                    l++;
+                }
+                else l++;
+            }
+            else System.out.println("Input invalid");
+        
+        //quis 20
+        System.out.println("20.	Apakah Termasuk dalam daftar sanksi internasional?");
+        yn = in.next();
+        if (yn.equalsIgnoreCase("stop")) {
+                
+            }
+            else if (yn.equalsIgnoreCase("y") || yn.equalsIgnoreCase("n")) {
+                if (yn.equalsIgnoreCase("y")) {
+                    Indikator.add(Indikator1[l]);
+                    l++;
+                }
+                else l++;
+            }
+            else System.out.println("Input invalid");
+        
+        //quis 21
+        System.out.println("21.	Apakah Negara masuk dalam daftar hitam FATF?");
+        yn = in.next();
+        if (yn.equalsIgnoreCase("stop")) {
+                
+            }
+            else if (yn.equalsIgnoreCase("y") || yn.equalsIgnoreCase("n")) {
+                if (yn.equalsIgnoreCase("y")) {
+                    Indikator.add(Indikator1[l]);
+                    l++;
+                }
+                else l++;
+            }
+            else System.out.println("Input invalid");
+        
+        //quis 22
+        System.out.println("22.	Apakah Negara penghasil narkoba?");
+        yn = in.next();
+        if (yn.equalsIgnoreCase("stop")) {
+                
+            }
+            else if (yn.equalsIgnoreCase("y") || yn.equalsIgnoreCase("n")) {
+                if (yn.equalsIgnoreCase("y")) {
+                    Indikator.add(Indikator1[l]);
+                    l++;
+                }
+                else l++;
+            }
+            else System.out.println("Input invalid");
+        
+        //quis 23
+        System.out.println("23.	Apakah melakukan bisnis valuta asing?");
+        yn = in.next();
+        if (yn.equalsIgnoreCase("stop")) {
+                
+            }
+            else if (yn.equalsIgnoreCase("y") || yn.equalsIgnoreCase("n")) {
+                if (yn.equalsIgnoreCase("y")) {
+                    Indikator.add(Indikator1[l]);
+                    l++;
+                }
+                else l++;
+            }
+            else System.out.println("Input invalid");
+        
+        //quis 24
+        System.out.println("24.	Apakah melakukan bisnis travel?");
+        yn = in.next();
+        if (yn.equalsIgnoreCase("stop")) {
+                
+            }
+            else if (yn.equalsIgnoreCase("y") || yn.equalsIgnoreCase("n")) {
+                if (yn.equalsIgnoreCase("y")) {
+                    Indikator.add(Indikator1[l]);
+                    l++;
+                }
+                else l++;
+            }
+            else System.out.println("Input invalid");
+        
+        //quis 25
+        System.out.println("25.	Apakah melakukan bisnis berbasis tunai?");
+        yn = in.next();
+        if (yn.equalsIgnoreCase("stop")) {
+                
+            }
+            else if (yn.equalsIgnoreCase("y") || yn.equalsIgnoreCase("n")) {
+                if (yn.equalsIgnoreCase("y")) {
+                    Indikator.add(Indikator1[l]);
+                    l++;
+                }
+                else l++;
+            }
+            else System.out.println("Input invalid");
+        
+        //quis 26
+        System.out.println("26.	Apakah melakukan bisnis sumber daya alam?");
+        yn = in.next();
+        if (yn.equalsIgnoreCase("stop")) {
+                
+            }
+            else if (yn.equalsIgnoreCase("y") || yn.equalsIgnoreCase("n")) {
+                if (yn.equalsIgnoreCase("y")) {
+                    Indikator.add(Indikator1[l]);
+                    l++;
+                }
+                else l++;
+            }
+            else System.out.println("Input invalid");
+        
+        
+        //quis 27
+        System.out.println("27.	Apakah menggunakan Bilyet Giro?");
+        yn = in.next();
+        if (yn.equalsIgnoreCase("stop")) {
+                
+            }
+            else if (yn.equalsIgnoreCase("y") || yn.equalsIgnoreCase("n")) {
+                if (yn.equalsIgnoreCase("y")) {
+                    Indikator.add(Indikator1[l]);
+                    l++;
+                }
+                else l++;
+            }
+            else System.out.println("Input invalid");
+        
+        
+        //quis 28
+        System.out.println("28.	Apakah menggunakan Cek Pelawat?");
+        yn = in.next();
+        if (yn.equalsIgnoreCase("stop")) {
+                
+            }
+            else if (yn.equalsIgnoreCase("y") || yn.equalsIgnoreCase("n")) {
+                if (yn.equalsIgnoreCase("y")) {
+                    Indikator.add(Indikator1[l]);
+                    l++;
+                }
+                else l++;
+            }
+            else System.out.println("Input invalid");
+        
+        
+        //quis 29
+        System.out.println("29.	Apakah menggunakan Deposito?");
+        yn = in.next();
+        if (yn.equalsIgnoreCase("stop")) {
+                
+            }
+            else if (yn.equalsIgnoreCase("y") || yn.equalsIgnoreCase("n")) {
+                if (yn.equalsIgnoreCase("y")) {
+                    Indikator.add(Indikator1[l]);
+                    l++;
+                }
+                else l++;
+            }
+            else System.out.println("Input invalid");
+        
+        
+        //quis 30
+        System.out.println("30.	Apakah menggunakan Electronic banking?");
+        yn = in.next();
+        if (yn.equalsIgnoreCase("stop")) {
+                
+            }
+            else if (yn.equalsIgnoreCase("y") || yn.equalsIgnoreCase("n")) {
+                if (yn.equalsIgnoreCase("y")) {
+                    Indikator.add(Indikator1[l]);
+                    l++;
+                }
+                else l++;
+            }
+            else System.out.println("Input invalid");
+        
+        
+        //quis 31
+        System.out.println("31.	Apakah menggunakan Alat pembayaran dengan kartu?");
+        yn = in.next();
+        if (yn.equalsIgnoreCase("stop")) {
+                
+            }
+            else if (yn.equalsIgnoreCase("y") || yn.equalsIgnoreCase("n")) {
+                if (yn.equalsIgnoreCase("y")) {
+                    Indikator.add(Indikator1[l]);
+                    l++;
+                }
+                else l++;
+            }
+            else System.out.println("Input invalid");
+        
+        
+        //quis 32
+        System.out.println("32.	Apakah menggunakan Reksadana?");
+        yn = in.next();
+        if (yn.equalsIgnoreCase("stop")) {
+                
+            }
+            else if (yn.equalsIgnoreCase("y") || yn.equalsIgnoreCase("n")) {
+                if (yn.equalsIgnoreCase("y")) {
+                    Indikator.add(Indikator1[l]);
+                    l++;
+                }
+                else l++;
+            }
+            else System.out.println("Input invalid");
+        
+        
+        //quis 33
+        System.out.println("33.	Apakah menggunakan Safe deposit box?");
+        yn = in.next();
+        if (yn.equalsIgnoreCase("stop")) {
+                
+            }
+            else if (yn.equalsIgnoreCase("y") || yn.equalsIgnoreCase("n")) {
+                if (yn.equalsIgnoreCase("y")) {
+                    Indikator.add(Indikator1[l]);
+                    l++;
+                }
+                else l++;
+            }
+            else System.out.println("Input invalid");
+        
+        
+        //quis 34
+        System.out.println("34.	Apakah menggunakan Obligasi?");
+        yn = in.next();
+        if (yn.equalsIgnoreCase("stop")) {
+                
+            }
+            else if (yn.equalsIgnoreCase("y") || yn.equalsIgnoreCase("n")) {
+                if (yn.equalsIgnoreCase("y")) {
+                    Indikator.add(Indikator1[l]);
+                    l++;
+                }
+                else l++;
+            }
+            else System.out.println("Input invalid");
+        
+        
+        //quis 35
+        System.out.println("35.	Apakah menggunakan Surat Utang Negara?");
+        yn = in.next();
+        if (yn.equalsIgnoreCase("stop")) {
+                
+            }
+            else if (yn.equalsIgnoreCase("y") || yn.equalsIgnoreCase("n")) {
+                if (yn.equalsIgnoreCase("y")) {
+                    Indikator.add(Indikator1[l]);
+                    l++;
+                }
+                else l++;
+            }
+            else System.out.println("Input invalid");
+        
+        
+        //quis 36
+        System.out.println("36.	Apakah merupakan Tersangka Tindak Pidana?");
+        yn = in.next();
+        if (yn.equalsIgnoreCase("stop")) {
+                
+            }
+            else if (yn.equalsIgnoreCase("y") || yn.equalsIgnoreCase("n")) {
+                if (yn.equalsIgnoreCase("y")) {
+                    Indikator.add(Indikator1[l]);
+                    l++;
+                }
+                else l++;
+            }
+            else System.out.println("Input invalid");
+        
+        
+        //quis 37
+        System.out.println("37.	Apakah melakukan U-turn Transaction?");
+        yn = in.next();
+        if (yn.equalsIgnoreCase("stop")) {
+                
+            }
+            else if (yn.equalsIgnoreCase("y") || yn.equalsIgnoreCase("n")) {
+                if (yn.equalsIgnoreCase("y")) {
+                    Indikator.add(Indikator1[l]);
+                    l++;
+                }
+                else l++;
+            }
+            else System.out.println("Input invalid");
+        
+        
+        //quis 38
+        System.out.println("38.	Apakah melakukan Pass by Transaction?");
+        yn = in.next();
+        if (yn.equalsIgnoreCase("stop")) {
+                
+            }
+            else if (yn.equalsIgnoreCase("y") || yn.equalsIgnoreCase("n")) {
+                if (yn.equalsIgnoreCase("y")) {
+                    Indikator.add(Indikator1[l]);
+                    l++;
+                }
+                else l++;
+            }
+            else System.out.println("Input invalid");
+        
+        
+        //quis 39
+        System.out.println("39.	Apakah melakukan Smurfing Transaction?");
+        yn = in.next();
+        if (yn.equalsIgnoreCase("stop")) {
+                
+            }
+            else if (yn.equalsIgnoreCase("y") || yn.equalsIgnoreCase("n")) {
+                if (yn.equalsIgnoreCase("y")) {
+                    Indikator.add(Indikator1[l]);
+                    l++;
+                }
+                else l++;
+            }
+            else System.out.println("Input invalid");
+        
+        //quis 40
+        System.out.println("40.	Apakah melakukan Structuring Transaction?");
+        yn = in.next();
+        if (yn.equalsIgnoreCase("stop")) {
+                
+            }
+            else if (yn.equalsIgnoreCase("y") || yn.equalsIgnoreCase("n")) {
+                if (yn.equalsIgnoreCase("y")) {
+                    Indikator.add(Indikator1[l]);
+                    l++;
+                }
+                else l++;
+            }
+            else System.out.println("Input invalid");
+        
+        //quis 41
+        System.out.println("41.	Apakah merupakan Beneficial Owner?");
+        yn = in.next();
+        if (yn.equalsIgnoreCase("stop")) {
+                
+            }
+            else if (yn.equalsIgnoreCase("y") || yn.equalsIgnoreCase("n")) {
+                if (yn.equalsIgnoreCase("y")) {
+                    Indikator.add(Indikator1[l]);
+                    l++;
+                }
+                else l++;
+            }
+            else System.out.println("Input invalid");
+        
+       
+        //rule1
+        if (Indikator.contains("f1") && Indikator.contains("f2") && Indikator.contains("f3") && Indikator.contains("f4") && Indikator.contains("f5") && Indikator.contains("f10") && Indikator.contains("f23") && Indikator.contains("f27")&& Indikator.contains("f28")&& Indikator.contains("f29")
+         && Indikator.contains("f30")&& Indikator.contains("f31")&& Indikator.contains("f32")&& Indikator.contains("f33")&& Indikator.contains("f34")&& Indikator.contains("f35")&& Indikator.contains("f36")&& Indikator.contains("f37")&& Indikator.contains("f38")&& Indikator.contains("f39")
+         && Indikator.contains("f40")&& Indikator.contains("f41")) {
+            System.out.println("rule 1");
+            bobot = f1 + f2 + f3 + f4 + f5 + f10 + f23 + f27 + f28 + f29 
+                  + f30 + f31 + f32 + f33 + f34 + f35 + f36 + f37 + f38 + f39 
+                  + f40 + f41;
+        }
+        //rule2
+        else if (Indikator.contains("f1") && Indikator.contains("f2") && Indikator.contains("f3") && Indikator.contains("f19") && Indikator.contains("f20") && Indikator.contains("f21") && Indikator.contains("f23") && Indikator.contains("f27")&& Indikator.contains("f28")&& Indikator.contains("f29")
+              && Indikator.contains("f30")&& Indikator.contains("f31")&& Indikator.contains("f32")&& Indikator.contains("f33")&& Indikator.contains("f34")&& Indikator.contains("f35")&& Indikator.contains("f36")&& Indikator.contains("f37")&& Indikator.contains("f38")&& Indikator.contains("f39")
+              && Indikator.contains("f40")&& Indikator.contains("f41")){
+            System.out.println("rule 2");
+            bobot = f1 + f2 + f3 + f19 + f20 + f21 + f23 + f27 + f28 + f29 
+                  + f30 + f31 + f32 + f33 + f34 + f35 + f36 + f37 + f38 + f39 
+                  + f40 + f41;
+        }
+        //rule3
+        else if (Indikator.contains("f1") && Indikator.contains("f2") && Indikator.contains("f3") && Indikator.contains("f4") && Indikator.contains("f5") && Indikator.contains("f6") && Indikator.contains("f23") && Indikator.contains("f27")&& Indikator.contains("f28")&& Indikator.contains("f29")
+              && Indikator.contains("f30")&& Indikator.contains("f31")&& Indikator.contains("f32")&& Indikator.contains("f33")&& Indikator.contains("f34")&& Indikator.contains("f35")&& Indikator.contains("f36")&& Indikator.contains("f37")&& Indikator.contains("f38")&& Indikator.contains("f39")
+              && Indikator.contains("f40")&& Indikator.contains("f41")){
+            System.out.println("rule 2");
+            bobot = f1 + f2 + f3 + f4 + f5 + f6 + f23 + f27 + f28 + f29 
+                  + f30 + f31 + f32 + f33 + f34 + f35 + f36 + f37 + f38 + f39 
+                  + f40 + f41;
+        }
+        //rule4
+        else if (Indikator.contains("f1") && Indikator.contains("f2") && Indikator.contains("f3") && Indikator.contains("f4") && Indikator.contains("f5") && Indikator.contains("f6") && Indikator.contains("f7") && Indikator.contains("f27")&& Indikator.contains("f28")&& Indikator.contains("f29")
+              && Indikator.contains("f30")&& Indikator.contains("f31")&& Indikator.contains("f32")&& Indikator.contains("f33")&& Indikator.contains("f34")&& Indikator.contains("f35")&& Indikator.contains("f36")&& Indikator.contains("f37")&& Indikator.contains("f38")&& Indikator.contains("f39")
+              && Indikator.contains("f40")&& Indikator.contains("f41")){
+            System.out.println("rule 3");
+            bobot = f1 + f2 + f3 + f4 + f5 + f6 + f7 + f27 + f28 + f29 
+                  + f30 + f31 + f32 + f33 + f34 + f35 + f36 + f37 + f38 + f39 
+                  + f40 + f41;  
+        }
+        //rule5
+        else if (Indikator.contains("f1") && Indikator.contains("f2") && Indikator.contains("f3") && Indikator.contains("f4") && Indikator.contains("f5") && Indikator.contains("f6") && Indikator.contains("f7") && Indikator.contains("f8") && Indikator.contains("f11") && Indikator.contains("f23") 
+              && Indikator.contains("f27")&& Indikator.contains("f28")&& Indikator.contains("f29") && Indikator.contains("f30")&& Indikator.contains("f31")&& Indikator.contains("f32")&& Indikator.contains("f33")&& Indikator.contains("f34")&& Indikator.contains("f35")&& Indikator.contains("f36")
+              && Indikator.contains("f37")&& Indikator.contains("f38")&& Indikator.contains("f39") && Indikator.contains("f40")&& Indikator.contains("f41")){
+            System.out.println("rule 5");
+            bobot = f1 + f2 + f3 + f4 + f5 + f6 + f7 + f8 + f11 + f23 
+                    + f27 + f28 + f29 + f30 + f31 + f32 + f33 + f34 + f35 + f36 
+                    + f37 + f38 + f39 + f40 +f41;
+        }
+        //rule6
+        else if (Indikator.contains("f1") && Indikator.contains("f2") && Indikator.contains("f3") && Indikator.contains("f4") && Indikator.contains("f5") && Indikator.contains("f6") && Indikator.contains("f7") && Indikator.contains("f8") && Indikator.contains("f9") && Indikator.contains("f23") 
+              && Indikator.contains("f27")&& Indikator.contains("f28")&& Indikator.contains("f29") && Indikator.contains("f30")&& Indikator.contains("f31")&& Indikator.contains("f32")&& Indikator.contains("f33")&& Indikator.contains("f34")&& Indikator.contains("f35")&& Indikator.contains("f36")
+              && Indikator.contains("f37")&& Indikator.contains("f38")&& Indikator.contains("f39") && Indikator.contains("f40")&& Indikator.contains("f41")){
+            System.out.println("rule 6");
+            bobot = f1 + f2 + f3 + f4 + f5 + f6 + f7 + f8 + f9 + f23 
+                  + f27 + f28 + f29 + f30 + f31 + f32 + f33 + f34 + f35 + f36 
+                  + f37 + f38 + f39 + f40 +f41;
+        }
+        //rule7
+        else if (Indikator.contains("f1") && Indikator.contains("f2") && Indikator.contains("f3") && Indikator.contains("f4") && Indikator.contains("f5") && Indikator.contains("f6") && Indikator.contains("f7") && Indikator.contains("f8") && Indikator.contains("f9") && Indikator.contains("f10")
+              && Indikator.contains("f23") && Indikator.contains("f27")&& Indikator.contains("f28")&& Indikator.contains("f29") && Indikator.contains("f30")&& Indikator.contains("f31")&& Indikator.contains("f32")&& Indikator.contains("f33")&& Indikator.contains("f34")&& Indikator.contains("f35")
+              && Indikator.contains("f36")&& Indikator.contains("f37")&& Indikator.contains("f38")&& Indikator.contains("f39") && Indikator.contains("f40")&& Indikator.contains("f41")){
+            System.out.println("rule 7");
+            bobot = f1 + f2 + f3 + f4 + f5 + f6 + f7 + f8 + f9 + f10 
+                  + f23 + f27 + f28 + f29 + f30 + f31 + f32 + f33 + f34 + f35 
+                  + f36 + f37 + f38 + f39 + f40 +f41;
+        }
+        //rule8
+        else if (Indikator.contains("f1") && Indikator.contains("f2") && Indikator.contains("f3") && Indikator.contains("f4") && Indikator.contains("f5") && Indikator.contains("f6") && Indikator.contains("f7") && Indikator.contains("f8") && Indikator.contains("f9") && Indikator.contains("f10")
+              && Indikator.contains("f11") && Indikator.contains("f23") && Indikator.contains("f27")&& Indikator.contains("f28")&& Indikator.contains("f29") && Indikator.contains("f30")&& Indikator.contains("f31")&& Indikator.contains("f32")&& Indikator.contains("f33")&& Indikator.contains("f34")
+              && Indikator.contains("f35") && Indikator.contains("f36")&& Indikator.contains("f37")&& Indikator.contains("f38")&& Indikator.contains("f39") && Indikator.contains("f40")&& Indikator.contains("f41")){
+            System.out.println("rule 8");
+            bobot = f1 + f2 + f3 + f4 + f5 + f6 + f7 + f8 + f9 + f10 
+                  + f11 + f23 + f27 + f28 + f29 + f30 + f31 + f32 + f33 + f34 
+                  + f35 + f36 + f37 + f38 + f39 + f40 +f41;
+        }
+        //rule9
+        else if (Indikator.contains("f1") && Indikator.contains("f2") && Indikator.contains("f3") && Indikator.contains("f4") && Indikator.contains("f5") && Indikator.contains("f6") && Indikator.contains("f7") && Indikator.contains("f8") && Indikator.contains("f9") && Indikator.contains("f10")
+              && Indikator.contains("f11") && Indikator.contains("f12") && Indikator.contains("f27")&& Indikator.contains("f28")&& Indikator.contains("f29") && Indikator.contains("f30")&& Indikator.contains("f31")&& Indikator.contains("f32")&& Indikator.contains("f33")&& Indikator.contains("f34")
+              && Indikator.contains("f35") && Indikator.contains("f36")&& Indikator.contains("f37")&& Indikator.contains("f38")&& Indikator.contains("f39") && Indikator.contains("f40")&& Indikator.contains("f41")){
+            System.out.println("rule 9");
+            bobot = f1 + f2 + f3 + f4 + f5 + f6 + f7 + f8 + f9 + f10 
+                  + f11 + f12 + f27 + f28 + f29 + f30 + f31 + f32 + f33 + f34 
+                  + f35 + f36 + f37 + f38 + f39 + f40 +f41;
+        }
+        //rule10
+        else if (Indikator.contains("f1") && Indikator.contains("f2") && Indikator.contains("f3") && Indikator.contains("f4") && Indikator.contains("f5") && Indikator.contains("f6") && Indikator.contains("f7") && Indikator.contains("f8") && Indikator.contains("f9") && Indikator.contains("f10")
+              && Indikator.contains("f11") && Indikator.contains("f12") && Indikator.contains("f13") && Indikator.contains("f27")&& Indikator.contains("f28")&& Indikator.contains("f29") && Indikator.contains("f30")&& Indikator.contains("f31")&& Indikator.contains("f32")&& Indikator.contains("f33")
+              && Indikator.contains("f34") && Indikator.contains("f35") && Indikator.contains("f36")&& Indikator.contains("f37")&& Indikator.contains("f38")&& Indikator.contains("f39") && Indikator.contains("f40")&& Indikator.contains("f41")){
+            System.out.println("rule 10");
+            bobot = f1 + f2 + f3 + f4 + f5 + f6 + f7 + f8 + f9 + f10 
+                  + f11 + f12 +13 + f27 + f28 + f29 + f30 + f31 + f32 + f33 
+                  + f34 + f35 + f36 + f37 + f38 + f39 + f40 +f41;
+        }
+        //rule11
+        else if (Indikator.contains("f1") && Indikator.contains("f2") && Indikator.contains("f3") && Indikator.contains("f4") && Indikator.contains("f5") && Indikator.contains("f6") && Indikator.contains("f7") && Indikator.contains("f8") && Indikator.contains("f9") && Indikator.contains("f10")
+              && Indikator.contains("f11") && Indikator.contains("f12") && Indikator.contains("f13") && Indikator.contains("f14") && Indikator.contains("f27")&& Indikator.contains("f28")&& Indikator.contains("f29") && Indikator.contains("f30")&& Indikator.contains("f31")&& Indikator.contains("f32")
+              && Indikator.contains("f33") && Indikator.contains("f34") && Indikator.contains("f35") && Indikator.contains("f36")&& Indikator.contains("f37")&& Indikator.contains("f38")&& Indikator.contains("f39") && Indikator.contains("f40")&& Indikator.contains("f41")){
+            System.out.println("rule 11");
+            bobot = f1 + f2 + f3 + f4 + f5 + f6 + f7 + f8 + f9 + f10 
+                  + f11 + f12 + f13 + f14 + f27 + f28 + f29 + f30 + f31 + f32 
+                  + f33 + f34 + f35 + f36 + f37 + f38 + f39 + f40 +f41;
+        }
+        //rule12
+        else if (Indikator.contains("f1") && Indikator.contains("f2") && Indikator.contains("f3") && Indikator.contains("f4") && Indikator.contains("f5") && Indikator.contains("f6") && Indikator.contains("f7") && Indikator.contains("f8") && Indikator.contains("f9") && Indikator.contains("f10")
+              && Indikator.contains("f11") && Indikator.contains("f12") && Indikator.contains("f13") && Indikator.contains("f14")  && Indikator.contains("f15") && Indikator.contains("f27")&& Indikator.contains("f28")&& Indikator.contains("f29") && Indikator.contains("f30")&& Indikator.contains("f31")
+              && Indikator.contains("f32") && Indikator.contains("f33") && Indikator.contains("f34") && Indikator.contains("f35") && Indikator.contains("f36")&& Indikator.contains("f37")&& Indikator.contains("f38")&& Indikator.contains("f39") && Indikator.contains("f40")&& Indikator.contains("f41")){
+            System.out.println("rule 12");
+            bobot = f1 + f2 + f3 + f4 + f5 + f6 + f7 + f8 + f9 + f10 
+                  + f11 + f12 + f13 + f14 + +f15 + f27 + f28 + f29 + f30 + f31 
+                  + f32 + f33 + f34 + f35 + f36 + f37 + f38 + f39 + f40 +f41;
+        }
+         //rule13
+        else if (Indikator.contains("f1") && Indikator.contains("f2") && Indikator.contains("f3") && Indikator.contains("f4") && Indikator.contains("f5") && Indikator.contains("f6") && Indikator.contains("f7") && Indikator.contains("f8") && Indikator.contains("f9") && Indikator.contains("f10")
+              && Indikator.contains("f11") && Indikator.contains("f12") && Indikator.contains("f13") && Indikator.contains("f14")  && Indikator.contains("f15") && Indikator.contains("f16") && Indikator.contains("f27") && Indikator.contains("f28") && Indikator.contains("f29") && Indikator.contains("f30")
+              && Indikator.contains("f31") && Indikator.contains("f32") && Indikator.contains("f33") && Indikator.contains("f34") && Indikator.contains("f35") && Indikator.contains("f36") && Indikator.contains("f37") && Indikator.contains("f38") && Indikator.contains("f39") && Indikator.contains("f40")
+              && Indikator.contains("f41")){
+           System.out.println("rule 13");
+            bobot = f1 + f2 + f3 + f4 + f5 + f6 + f7 + f8 + f9 + f10 
+                  + f11 + f12 + f13 + f14 + +f15 + f16 + f27 + f28 + f29 + f30 
+                  + f31 + f32 + f33 + f34 + f35 + f36 + f37 + f38 + f39 + f40 
+                  + f41;
+        }
+        //rule14
+        else if (Indikator.contains("f1") && Indikator.contains("f2") && Indikator.contains("f3") && Indikator.contains("f4") && Indikator.contains("f5") && Indikator.contains("f6") && Indikator.contains("f7") && Indikator.contains("f8") && Indikator.contains("f9") && Indikator.contains("f10")
+              && Indikator.contains("f11") && Indikator.contains("f12") && Indikator.contains("f13") && Indikator.contains("f14")  && Indikator.contains("f15") && Indikator.contains("f16") && Indikator.contains("f17") && Indikator.contains("f27") && Indikator.contains("f28") && Indikator.contains("f29") 
+              && Indikator.contains("f30") && Indikator.contains("f31") && Indikator.contains("f32") && Indikator.contains("f33") && Indikator.contains("f34") && Indikator.contains("f35") && Indikator.contains("f36") && Indikator.contains("f37") && Indikator.contains("f38") && Indikator.contains("f39") 
+              && Indikator.contains("f40") && Indikator.contains("f41")){
+            System.out.println("rule 14");
+            bobot = f1 + f2 + f3 + f4 + f5 + f6 + f7 + f8 + f9 + f10 
+                  + f11 + f12 + f13 + f14 + +f15 + f16 + f17 + f27 + f28 + f29
+                  + f30 + f31 + f32 + f33 + f34 + f35 + f36 + f37 + f38 + f39 
+                  + f40 + f41;
+        }
+        //rule15
+        else if (Indikator.contains("f1") && Indikator.contains("f2") && Indikator.contains("f3") && Indikator.contains("f4") && Indikator.contains("f5") && Indikator.contains("f6") && Indikator.contains("f7") && Indikator.contains("f8") && Indikator.contains("f9") && Indikator.contains("f10")
+              && Indikator.contains("f11") && Indikator.contains("f12") && Indikator.contains("f13") && Indikator.contains("f14")  && Indikator.contains("f15") && Indikator.contains("f16") && Indikator.contains("f17") && Indikator.contains("f18") && Indikator.contains("f27") && Indikator.contains("f28") 
+              && Indikator.contains("f29") && Indikator.contains("f30") && Indikator.contains("f31") && Indikator.contains("f32") && Indikator.contains("f33") && Indikator.contains("f34") && Indikator.contains("f35") && Indikator.contains("f36") && Indikator.contains("f37") && Indikator.contains("f38") 
+              && Indikator.contains("f39") && Indikator.contains("f40") && Indikator.contains("f41")){
+            System.out.println("rule 15");
+            bobot = f1 + f2 + f3 + f4 + f5 + f6 + f7 + f8 + f9 + f10 
+                  + f11 + f12 + f13 + f14 + +f15 + f16 + f17 + f18 + f27 + f28 
+                  + f29 + f30 + f31 + f32 + f33 + f34 + f35 + f36 + f37 + f38 
+                  + f39 + f40 + f41;
+        }
+        //rule16
+        else if (Indikator.contains("f1") && Indikator.contains("f2") && Indikator.contains("f3") && Indikator.contains("f4") && Indikator.contains("f5") && Indikator.contains("f6") && Indikator.contains("f7") && Indikator.contains("f8") && Indikator.contains("f9") && Indikator.contains("f10")
+              && Indikator.contains("f11") && Indikator.contains("f12") && Indikator.contains("f13") && Indikator.contains("f14")  && Indikator.contains("f15") && Indikator.contains("f16") && Indikator.contains("f17") && Indikator.contains("f18") && Indikator.contains("f20") && Indikator.contains("f21")
+              && Indikator.contains("f27") && Indikator.contains("f28") && Indikator.contains("f29") && Indikator.contains("f30") && Indikator.contains("f31") && Indikator.contains("f32") && Indikator.contains("f33") && Indikator.contains("f34") && Indikator.contains("f35") && Indikator.contains("f36") 
+              && Indikator.contains("f37") && Indikator.contains("f38") && Indikator.contains("f39") && Indikator.contains("f40") && Indikator.contains("f41")){
+            System.out.println("rule 16");
+            bobot = f1 + f2 + f3 + f4 + f5 + f6 + f7 + f8 + f9 + f10 
+                  + f11 + f12 + f13 + f14 + +f15 + f16 + f17 + f18 + f20 
+                  + f21 + f27 + f28 + f29 + f30 + f31 + f32 + f33 + f34 
+                  + f35 + f36 + f37 + f38 + f39 + f40 + f41;
+        }
+        //rule17
+        else if (Indikator.contains("f1") && Indikator.contains("f2") && Indikator.contains("f3") && Indikator.contains("f4") && Indikator.contains("f5") && Indikator.contains("f6") && Indikator.contains("f7") && Indikator.contains("f8") && Indikator.contains("f9") && Indikator.contains("f23")
+              && Indikator.contains("f24") && Indikator.contains("f27") && Indikator.contains("f28") && Indikator.contains("f29") && Indikator.contains("f30") && Indikator.contains("f31") && Indikator.contains("f32") && Indikator.contains("f33") && Indikator.contains("f34") && Indikator.contains("f35")
+              && Indikator.contains("f36") && Indikator.contains("f37") && Indikator.contains("f38") && Indikator.contains("f39") && Indikator.contains("f40") && Indikator.contains("f41")){
+            bobot = f1 + f2 + f3 + f4 + f5 + f6 + f7 + f8 + f9 +f23 
+                  + f24 + f27 + f28 + f29 + f30 + f31 + f32 + f33 + f34 + f35 
+                  + f36 + f37 + f38 + f39 + f40 + f41;
+        }
+        //rule18
+        else if (Indikator.contains("f1") && Indikator.contains("f2") && Indikator.contains("f3") && Indikator.contains("f4") && Indikator.contains("f5") && Indikator.contains("f6") && Indikator.contains("f7") && Indikator.contains("f8") && Indikator.contains("f9") && Indikator.contains("f23")
+              && Indikator.contains("f24") && Indikator.contains("f25") && Indikator.contains("f27") && Indikator.contains("f28") && Indikator.contains("f29") && Indikator.contains("f30") && Indikator.contains("f31") && Indikator.contains("f32") && Indikator.contains("f33") && Indikator.contains("f34") 
+              && Indikator.contains("f35") && Indikator.contains("f36") && Indikator.contains("f37") && Indikator.contains("f38") && Indikator.contains("f39") && Indikator.contains("f40") && Indikator.contains("f41")){
+            System.out.println("rule 18");
+            bobot = f1 + f2 + f3 + f4 + f5 + f6 + f7 + f8 + f9 +f23 
+                  + f24 + f25 + f27 + f28 + f29 + f30 + f31 + f32 + f33 + f34 
+                  + f35 + f36 + f37 + f38 + f39 + f40 + f41;
+        }
+        //rule19
+        else if (Indikator.contains("f1") && Indikator.contains("f2") && Indikator.contains("f3") && Indikator.contains("f4") && Indikator.contains("f5") && Indikator.contains("f6") && Indikator.contains("f7") && Indikator.contains("f8") && Indikator.contains("f9") && Indikator.contains("f23")
+              && Indikator.contains("f24") && Indikator.contains("f25") && Indikator.contains("f26") && Indikator.contains("f27") && Indikator.contains("f28") && Indikator.contains("f29") && Indikator.contains("f30") && Indikator.contains("f31") && Indikator.contains("f32") && Indikator.contains("f33") 
+              && Indikator.contains("f34") && Indikator.contains("f35") && Indikator.contains("f36") && Indikator.contains("f37") && Indikator.contains("f38") && Indikator.contains("f39") && Indikator.contains("f40") && Indikator.contains("f41")){
+            System.out.println("rule 19");
+            bobot = f1 + f2 + f3 + f4 + f5 + f6 + f7 + f8 + f9 +f23 
+                  + f24 + f25 + f26 + f27 + f28 + f29 + f30 + f31 + f32 + f33 
+                  + f34 + f35 + f36 + f37 + f38 + f39 + f40 + f41;
+        }
+        
+        if (bobot < 80){
+            System.out.println("Tidak terindikasi mencurigakan, namun perlu dilakukan customer\n" +
+                                "due diligence (CDD) kembali");
+    }
+        else if (bobot >=80 && bobot < 150 ){
+            System.out.println("Terindikasi mencurigakan dengan level low, perlu dilaporkan ke\n" +
+                                "PPATK disertai hasil CDD");
+        }
+        else if (bobot >= 150 && bobot < 221){
+             System.out.println("Terindikasi mencurigakan dengan level medium, wajib dilaporkan\n" +
+                                "ke PPATK disertai data dukung transaks");
+                }
+        else {
+            System.out.println("Terindikasi mencurigakan dengan level high, wajib segera\n" +
+                                "dilaporkan ke PPATK disertai data dukung transaksi");
+        }
+}
+}
+
